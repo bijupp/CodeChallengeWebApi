@@ -12,20 +12,20 @@ namespace WebApiFibonacci.Controllers
     {
         /// <summary>
         /// The get method will generate the fibinacci series number
-        /// upto a length of the input "length"
+        /// upto a length of the input "num"
         /// </summary>
         /// <param name="length">It is the length of the fibinacci series</param>
         /// <returns></returns>
-        public string Get(int id)
+        public string Get(int num)
         {
             string FibinocciSeries = "";
-            if (id > 0)
+            if (num > 0)
             {
                 try
                 {
                     //point interface "IFibinocci" to the class object "Fibinocci"
                     IFibinocci fibinocci = new Fibinocci();
-                    FibinocciSeries = fibinocci.generateFibinocci(id);
+                    FibinocciSeries = fibinocci.generateFibinocci(num);
                     return FibinocciSeries;
                 }
                 catch (Exception ex)

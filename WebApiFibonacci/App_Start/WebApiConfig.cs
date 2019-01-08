@@ -12,7 +12,7 @@ namespace WebApiFibonacci
         {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{num}",
                 defaults: new { id = RouteParameter.Optional }
             );
             config.Formatters.JsonFormatter.SupportedMediaTypes
