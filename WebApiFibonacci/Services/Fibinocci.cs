@@ -31,7 +31,6 @@ namespace WebApiFibonacci.Services
             }
             fibinocciResult.fibonacci = fibonacciSeries;
             fibinocciResult.Message = "Fibonacci series generates successfully";
-            //fibnoSeries = "fibonacci:" + string.Join(",",fibinocciResult.fibonacci.ToArray());
             return fibinocciResult;
         }
     }
