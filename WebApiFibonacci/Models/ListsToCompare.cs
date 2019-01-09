@@ -5,9 +5,9 @@ using System.Web;
 
 namespace WebApiFibonacci.Models
 {
-    public class BaseList
+    public class ListsToCompare
     {
-        public int Key { get; set; }
-        public string Value { get; set; }
+        public List<BaseList> Initial { get; set; }
+        public List<BaseList> Current { get; set; }
     }
 }

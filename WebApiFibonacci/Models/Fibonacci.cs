@@ -5,9 +5,9 @@ using System.Web;
 
 namespace WebApiFibonacci.Models
 {
-    public class BaseList
+    public class Fibonacci
     {
-        public int Key { get; set; }
-        public string Value { get; set; }
+        public List<int> fibonacci { get; set; }
+        public string Message { get; set; }
     }
 }

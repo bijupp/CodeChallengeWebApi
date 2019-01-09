@@ -128,7 +128,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BaseList.cs" />
+    <Compile Include="Models\Fibonacci.cs" />
     <Compile Include="Models\FinalResult.cs" />
+    <Compile Include="Models\ListsToCompare.cs" />
+    <Compile Include="Models\SortedCompareList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Common.cs" />
     <Compile Include="Services\Fibinocci.cs" />
