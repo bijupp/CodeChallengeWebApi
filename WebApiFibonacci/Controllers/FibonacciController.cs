@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApiFibonacci.Models;
 using WebApiFibonacci.Services;
 
 namespace WebApiFibonacci.Controllers
@@ -16,27 +17,28 @@ namespace WebApiFibonacci.Controllers
         /// </summary>
         /// <param name="num">It is the length of the fibinacci series</param>
         /// <returns></returns>
-        public string Get(int num)
+        public Fibonacci Get(int num)
         {
-            string FibinocciSeries = "";
+            Fibonacci _fibonacci = new Fibonacci();
             if (num > 0)
             {
                 try
                 {
                     //point interface "IFibinocci" to the class object "Fibinocci"
                     IFibinocci fibinocci = new Fibinocci();
-                    FibinocciSeries = fibinocci.generateFibinocci(num);
-                    return FibinocciSeries;
+                    _fibonacci = fibinocci.generateFibinocci(num);
+                    return _fibonacci;
                 }
                 catch (Exception ex)
                 {
-
-                    return ex.InnerException.ToString();
+                    _fibonacci.Message = ex.InnerException.ToString();
+                    return _fibonacci;
                 }
             }
             else
             {
-                return "Please provide a number greater than zero";
+                _fibonacci.Message = "Please provide a number greater than zero";
+                return _fibonacci;
             }
         }
 

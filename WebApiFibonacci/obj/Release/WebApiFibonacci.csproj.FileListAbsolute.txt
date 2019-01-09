@@ -72,6 +72,5 @@ D:\GitHub\WebApiFibonacci\CodeChallengeWebApi\WebApiFibonacci\bin\System.Web.Raz
 D:\GitHub\WebApiFibonacci\CodeChallengeWebApi\WebApiFibonacci\bin\System.Web.WebPages.xml
 D:\GitHub\WebApiFibonacci\CodeChallengeWebApi\WebApiFibonacci\bin\System.Web.WebPages.Deployment.xml
 D:\GitHub\WebApiFibonacci\CodeChallengeWebApi\WebApiFibonacci\bin\System.Web.WebPages.Razor.xml
-D:\GitHub\WebApiFibonacci\CodeChallengeWebApi\WebApiFibonacci\obj\Release\WebApiFibonacci.csprojResolveAssemblyReference.cache
 D:\GitHub\WebApiFibonacci\CodeChallengeWebApi\WebApiFibonacci\obj\Release\WebApiFibonacci.dll
 D:\GitHub\WebApiFibonacci\CodeChallengeWebApi\WebApiFibonacci\obj\Release\WebApiFibonacci.pdb

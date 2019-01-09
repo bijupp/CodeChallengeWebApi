@@ -8,7 +8,7 @@ namespace WebApiFibonacci.Services
 {
     public class Fibinocci: IFibinocci
     {
-        public string generateFibinocci(int length)
+        public Fibonacci generateFibinocci(int length)
         {
             int firstFibno = 0;
             int nextFibno = 1;
@@ -31,8 +31,8 @@ namespace WebApiFibonacci.Services
             }
             fibinocciResult.fibonacci = fibonacciSeries;
             fibinocciResult.Message = "Fibonacci series generates successfully";
-            fibnoSeries = "fibonacci:" + string.Join(",",fibinocciResult.fibonacci.ToArray());
-            return fibnoSeries;
+            //fibnoSeries = "fibonacci:" + string.Join(",",fibinocciResult.fibonacci.ToArray());
+            return fibinocciResult;
         }
     }
 }
