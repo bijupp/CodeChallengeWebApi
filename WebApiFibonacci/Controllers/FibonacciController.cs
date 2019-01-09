@@ -14,7 +14,7 @@ namespace WebApiFibonacci.Controllers
         /// The get method will generate the fibinacci series number
         /// upto a length of the input "num"
         /// </summary>
-        /// <param name="length">It is the length of the fibinacci series</param>
+        /// <param name="num">It is the length of the fibinacci series</param>
         /// <returns></returns>
         public string Get(int num)
         {
